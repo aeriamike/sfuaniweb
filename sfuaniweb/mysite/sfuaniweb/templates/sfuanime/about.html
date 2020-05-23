@@ -1,0 +1,50 @@
+{% extends "sfuanime/layout.html" %}
+
+{% block content %}
+{% load static %}
+<!--
+{% if latest_question_list %}
+    <ul>
+    {% for question in latest_question_list %}
+      <li><a href="{% url 'sfuanime:detail' question.id %}">sadasdasd{{ question.question_text }}</a></li>
+          {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+-->
+
+
+<div class = "news-container"  style="height:1000px;">
+<div class = "row" >
+  <div class = "col-sm-8" >
+  <h1 style="font-size:60px;font-style:bold;padding-left:400px;padding-top:50px;"> ABOUT </h1>
+</div>
+<div class = "col-sm-8" style="padding-left:520px;">
+  {% if not aboutpost %}
+
+    
+  {% endif %}
+  {% for a in aboutpost %}
+
+               <a href="{% url 'sfuanime:news_index' p.id %}"><h1 class="post-title">{{a.title}}</h1></a>
+               <div class="news-body">{{a.body|safe}}</div>
+
+
+         {% endfor %}
+
+
+  </div>
+
+
+</div>
+</div>
+
+
+</body>
+
+{% endblock %}
+
+
+
+</html>

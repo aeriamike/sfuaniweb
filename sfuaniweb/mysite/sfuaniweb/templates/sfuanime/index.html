@@ -5,33 +5,33 @@
 
 
 
+<div class="wrapper">
+
+
+
+
+
 <div class="index-image-container" style="width:90%;padding-left:150px;padding-top:50px;" >
   <div class="row">
   <div class="col-sm-8">
 
-
+<!-- python manage.py findstatic -->
     <div class="container">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
+
+
         </ol>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
           <div class="item active">
-            <img src="{% static 'img/mascot-1.png' %}" alt="Los Angeles" style="width:100%;">
+            <img src="{% static 'img/index-carosuel/mascot-1.png' %}"  style="width:100%;height:100%;">
+
           </div>
 
-          <div class="item">
-            <img src="{% static 'img/mascot-1.png' %}" alt="Chicago" style="width:100%;">
-          </div>
-
-          <div class="item">
-            <img src="{% static 'img/mascot-1.png' %}" alt="New york" style="width:100%;">
-          </div>
         </div>
 
         <!-- Left and right controls -->
@@ -49,67 +49,197 @@
   </div>
 
   <div class="col-sm">
+
       <div class="row">
+
         <div class="col-sm" style="background-color:#F2ABE8;height:340px; padding:10px;">
-
-          </div>
-
-
-
-          </div>
-
           <div class="row">
 
-              <div class="col-sm" style="background-color:#E9F37C;height:340px;padding:10px;">
+          <div class="col-sm">
+
+
+          </div>
+          <div class="col-sm">
+
+
+
+
+          </div>
+          </div>
+
+          <h1> Pinned Post </h1>
+
+          </div>
+
+
+
+          </div>
+
+          <div class="row" style="padding-top:20px;">
+
+
+              <div class="col-sm" style="height:170px;background-color:#E9F37C;">
+                  <h1 > Popular Tags</h1>
+
+
+                  <div class="row">
+                    <div class="col-sm-4" >
+                          <p id="rcorners2" style=" font-size:18px;border-radius: 15px 50px;
+  background: #73AD21;
+
+  width: 160px;
+  height: 50px; ">Summer Festival</p>
+                    </div>
+
+                    <div class="col-sm-4" >
+                      <p id="rcorners2" style=" font-size:18px;border-radius: 15px 50px;
+background: #73AD21;
+
+width: 160px;
+height: 50px; ">Summer Festival</p>
+                    </div>
+
+                    <div class="col-sm-8" >
+                      <p id="rcorners2" style=" font-size:18px;border-radius: 15px 50px;
+background: #73AD21;
+
+width: 160px;
+height: 50px; ">Summer Festival</p>
+                    </div>
+
+
+                  </div>
+
+
+
 
               </div>
 
-                <div class="col-sm" style="background-color:#4197C4;height:340px;padding:10px;">
 
-                </div>
     </div>
 
+
+
   </div>
 </div>
 
 
-<div class="row">
-
-    <div class="col-sm-8">
-      <div class="col-sm" style="padding-top:30px;">
-          <div class="bxslider">
-              <div class="slide"><img class = "slide-img" src="http://placehold.it/1600x880/112233/ffffff?text=FooBar1" style="height:300px;" /></div>
-              <div class="slide"><img class = "slide-img" src="http://placehold.it/1600x880/ee5678/ffffff?text=FooBar2" style="height:300px;"/></div>
-              <div class="slide"><img  class = "slide-img"src="http://placehold.it/1600x880/435ab6/ffffff?text=FooBar3" style="height:300px;"/></div>
-              <div class="slide"><img  class = "slide-img" src="http://placehold.it/1600x880/11cc22/ffffff?text=FooBar4" style="height:300px;"/></div>
-              <div class="slide"><img class = "slide-img" src="http://placehold.it/1600x880/ffa500/ffffff?text=FooBar5" style="height:300px;"/></div>
-              <div class="slide"><img  class = "slide-img" src="http://placehold.it/1600x880/cc44ff/ffffff?text=FooBar6" style="height:300px;"/></div>
-
-                <script>
-                  $(document).ready(function(){
-                $('.bxslider').bxSlider({
-                  slideWidth: 800,
-                  minSlides: 2,
-                  maxSlides: 4,
-                  moveSlides: 1,
-                  pager: false,
-                  auto: true
-                });
-              });
-              </script>
+  <div class="row" style="padding-top:20px;">
 
 
-          </div>
-      </div>
+    <div class="col-sm-2 " style="padding-left:40px;">
+    <div class = "row">
 
-
-  </div>
     <div class="col-sm">
-      <img class = "slide-img" src="http://placehold.it/1800x900/112233/ffffff?text=FooBar1" style="height:300px;width:100%;padding-top:30px;" />
+    <div class="" style="background-color:#D56363;height:200px;width:280px;">
 
+
+        <h2 id="date"><h2>
+        <script>
+            n =  new Date();
+            y = n.getFullYear();
+            m = n.getMonth() + 1;
+            d = n.getDate();
+
+            var mns = new Array(12);
+            mns[0] = "January";
+            mns[1] = "February";
+            mns[2] = "March";
+            mns[3] = "April";
+            mns[4] = "May";
+            mns[5] = "June";
+            mns[6] = "July";
+            mns[7] = "August";
+            mns[8] = "September";
+            mns[9] = "October";
+            mns[10] = "November";
+            mns[11] = "December";
+
+            var mnss = mns[m];
+
+            var dd = new Date();
+            var nd = dd.getDay();
+
+            document.getElementById("date").innerHTML =
+
+
+            "<h1 style='font-size:20px;padding-left:16px;color:white;'>"+mnss+"</h1>"
+            +
+              "<h1 style='font-size:40px;padding-left:30px;color:white;'>"+d+"</h1>"
+            +   "<h1 style='font-size:20px;padding-left:30px;color:white;'>"+y+"</h1>";
+
+
+        </script>
+
+
+        <p id="dayofweek"></p>
+
+        <script>
+
+          var d = new Date();
+          var weekday = new Array(7);
+          weekday[0] = "Sunday";
+          weekday[1] = "Monday";
+          weekday[2] = "Tuesday";
+          weekday[3] = "Wednesday";
+          weekday[4] = "Thursday";
+          weekday[5] = "Friday";
+          weekday[6] = "Saturday";
+
+          var n = weekday[d.getDay()];
+          document.getElementById("dayofweek").innerHTML =
+           "<h1 style='font-size:20px;color:white;'>"+n+"</h1>";
+
+        </script>
+
+
+    </div>
+    </div>
+
+    <div class="col-sm" style="padding-top:20px;">
+    <div class="" style="background-color:#C297C4;height:120px;width:280px;overflow:hidden;">
+
+        <a class="weatherwidget-io" href="https://forecast7.com/en/49d28n123d12/vancouver/" data-label_1="VANCOUVER" data-label_2="WEATHER" data-theme="original" >VANCOUVER WEATHER</a>
+
+<script>
+!function(d,s,id)
+{var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);
+  js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
+    </div>
+    </div>
+
+
+    </div>
+    </div>
+
+    <div class="col-sm-6" style="padding-left:40px;">
+
+      <div class="mr-1" style="background-color:#646060;height:340px;margin-right:20px;">
+        <h1 style="height:60px;">  Recent Post </h1>
+        {% for p in indexid %}
+                     <a href="{% url 'sfuanime:news_index' p.id %}"><h1 class="post-title">{{p.title}} {{p.datetime}}</h1></a>
+
+
+               {% endfor %}
 
       </div>
-</div>
+
+
+
+    </div>
+
+    <div class="col-sm">
+      <div class="tweer-feed" style="position:relative;left:10px;">
+        <a class="twitter-timeline" data-width="600" data-height="340" href="https://twitter.com/sfuanime" style="position:relative;left:30px;">Tweets by TwitterDev</a>
+      </div>
+      </div>
+
+
+
+
+  </div>
 
 
 </div>

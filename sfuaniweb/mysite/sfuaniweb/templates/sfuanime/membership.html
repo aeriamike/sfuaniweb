@@ -35,6 +35,27 @@
 </div>
 <div class = "col-sm-8" style="padding-left:420px;padding-top:100px;">
 
+
+
+    {% if mempost %}
+
+    {% else %}
+
+  <div class = "coming-soon" style="padding-left:400px;">
+    <div class = "row" >
+    <div class = "col-sm" >
+    <img src="{% static 'img/ren_chibi.jpg' %}"  style="width:100px">
+    </div>
+    <div class = "col-sm" >
+    <h1> Coming Soon! </h1>
+    </div>
+    <div class = "col-sm" >
+    <img src="{% static 'img/ayumi_chibi.jpg' %}"  style="width:100px">
+    </div>
+    </div>
+  </div>
+
+    {% endif %}
     {% for m in mempost %}
 
 

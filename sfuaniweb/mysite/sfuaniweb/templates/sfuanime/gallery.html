@@ -17,18 +17,75 @@
 
 
 <div class = "news-container"style="height:1000px;">
+
+  <!--
 <div class = "row" >
   <div class = "col-sm-8" >
   <h1 style="font-size:60px;font-style:bold;padding-left:400px;padding-top:40px;"> Gallery </h1>
 </div>
-<div class = "col-sm-8" style="padding-left:420px;padding-top:100px;">
+</div>
+
+    <div class = "row" style="width:80%;">
+
+     {% for g in gall %}
+
+        <div class="col-sm-4">
+             <img src="/static/{{g.hotel_Main_Img}}" width="60%">
+        </div>
+
+     {% endfor%}
+     </div>
+-->
 
 
-  </div>
+
+     <div class = "row" >
+       <div class = "col-sm-8" >
+
+         <div class="gallery-section">
+           <div class="inner-width">
+             <h1>My Gallery</h1>
+             <div class="border"></div>
+             <div class="gallery">
+
+               <a href="{% static 'img/img/1.png' %}"  class="image">
+                 <img src="{% static 'img/img/1.png' %}" alt="">
+               </a>
+
+               <a href="{% static 'img/index-gallery/g2.jpg' %}" class="image">
+                 <img src="{% static 'img/index-gallery/g2.jpg' %}" alt="">
+               </a>
+
+               <a href="{% static 'img/index-gallery/g3.jpg' %}" class="image">
+                 <img src="{% static 'img/index-gallery/g3.jpg' %}" alt="">
+               </a>
+
+
+             </div>
+           </div>
+         </div>
+     </div>
+     </div>
+
 
 
 </div>
-</div>
+
+
+
+<script>
+  $(".gallery").magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    gallery:{
+      enabled: true
+    }
+  });
+</script>
+
+
+
+
 
 </body>
 

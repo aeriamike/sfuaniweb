@@ -5,9 +5,14 @@ header{
 
 
 
+.header-container{
+  width:100%;
+  background-color: White;
+  height:200px;
+
+}
+
 .footer-container{
-height:360px;
-padding-top:100px;
 
 
 }
@@ -38,7 +43,7 @@ padding-top:100px;
   left:200px;
   top:30px;
   width:90%;
-  height:1000px;
+
 
 }
 
@@ -172,13 +177,6 @@ div.bxslider {
 
 }
 
-
-.bxslider .slide{
-
-
-  width:100px;
-
+.bx-wrapper, .bx-viewport {
 
 }
-
- <!-- scroll downmenu --!>

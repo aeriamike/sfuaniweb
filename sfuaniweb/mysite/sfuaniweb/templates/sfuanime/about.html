@@ -23,8 +23,24 @@
 <div class = "col-sm-8" style="padding-left:520px;">
   {% if not aboutpost %}
 
-    
+  {% else %}
+
+<div class = "coming-soon" style="padding-left:400px;">
+  <div class = "row" >
+  <div class = "col-sm" >
+  <img src="{% static 'img/ren_chibi.jpg' %}"  style="width:100px">
+  </div>
+  <div class = "col-sm" >
+  <h1> Coming Soon! </h1>
+  </div>
+  <div class = "col-sm" >
+  <img src="{% static 'img/ayumi_chibi.jpg' %}"  style="width:100px">
+  </div>
+  </div>
+</div>
+
   {% endif %}
+
   {% for a in aboutpost %}
 
                <a href="{% url 'sfuanime:news_index' p.id %}"><h1 class="post-title">{{a.title}}</h1></a>

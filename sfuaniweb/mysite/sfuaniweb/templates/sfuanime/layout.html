@@ -23,6 +23,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 <!--bxslider -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -105,11 +110,11 @@
     <div class ="asdasd"  style="display:inline-block;">
 
       <div class="header-logo"  style="display:inline-block;">
-        <img class="header-logo-pic" src  ="{% static 'img/logo.png' %}" alt = "My Image" style="position:relative;top:20px;left:90px;height:100px;width:100px;">
+        <img class="header-logo-pic" src  ="{% static 'img/logo.png' %}" alt = "My Image" style="position:relative;top:20px;left:120px;height:100px;width:100px;">
       </div>
 
 
-    <div class = "index-title-1" style="display:inline-block;position:relative;top:50px;left:100px;">
+    <div class = "index-title-1" style="display:inline-block;position:relative;top:50px;left:130px;">
         <h1 style="font-size:18px;font-weight:bold;color:black;"> The official website of </h1>
 
         <h1 style="font-size:44px;display:inline-block;font-weight:bold;color:#CB2F11;"> SFU </h1>
@@ -123,23 +128,11 @@
 
   <div class="" style="padding-top:80px;">
     <a href="https://www.facebook.com/groups/sfuanime/"><i class="fa fa-facebook-official" style="font-size:40px;color:#908C92;"></i></a>
-    <a href="https://twitter.com/sfuanime?lang=en"><i class="fa fa-twitter" style="font-size:40px;color:#908C92;padding-left:30px;"></i></a>
-    <a href="https://discord.gg/YcW3AtX"><i class="fa fa-discord" style="font-size:40px;position:relative;color:#908C92;padding-left:30px;" aria-hidden="true"></i></a>
-    <a href=""> <i class="fa fa-envelope" style="font-size:40px;position:relative;color:#908C92;padding-left:30px;" aria-hidden="true"></i></a>
-    <a href=""><div class="sum-logo" style="position:relative;left:280px;bottom:50px;" >
+    <a href="https://twitter.com/sfuanime?lang=en"><i class="fa fa-twitter" style="font-size:40px;color:#908C92;padding-left:60px;"></i></a>
+    <a href="https://discord.gg/YcW3AtX"><i class="fa fa-discord" style="font-size:40px;position:relative;color:#908C92;padding-left:60px;" aria-hidden="true"></i></a>
+    <a href="https://www.sfusummerfestival.com/"><div class="sum-logo" style="position:relative;left:280px;bottom:50px;" >
     <img class="header-logo-pic" src  ="{% static 'img/sumfest.png' %}" alt = "My Image" style="width:15%;height:20%;">
   </div>  </a>
-
-  <h2>Date:</h2>
-  <h2 id="date"></p>
-  <script>
-      n =  new Date();
-      y = n.getFullYear();
-      m = n.getMonth() + 1;
-      d = n.getDate();
-      document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
-
-  </script>
 
   </div>
 
@@ -158,22 +151,40 @@
 <div class = "footer-container">
   <div class = "footer-copyright">
 
-    <div class="" style="float:center;padding-left:210px;">
+    <div class="" style="float:center;padding-left:170px;">
       <a href="#">   <img class="header-logo-pic" src  ="{% static 'img/logo.png' %}" alt = "My Image" style="height:60px;width:60px;position:relative;bottom:20px;"> </a>
-
       <a href="https://www.facebook.com/groups/sfuanime/"><i class="fa fa-facebook-official" style="font-size:50px;color:#908C92;padding-left:30px;"></i></a>
       <a href="https://twitter.com/sfuanime?lang=en"><i class="fa fa-twitter" style="font-size:50px;color:#908C92;padding-left:30px;"></i></a>
       <a href="https://discord.gg/YcW3AtX"><i class="fa fa-discord" style="font-size:50px;position:relative;color:#908C92;padding-left:30px;" aria-hidden="true"></i></a>
-      <a href=""> <i class="fa fa-envelope" style="font-size:50px;position:relative;color:#908C92;padding-left:30px;" aria-hidden="true"></i></a>
 
     </div>
 
 
 
-      <h4 style="position:relative;width:800px;padding-top:20px;padding-bottom:20px;padding-left:200px;">	&copy; 2020 Copyright: SFU Anime Club. All rights reserved</h4>
+      <h4 style="position:relative;width:800px;padding-top:20px;padding-bottom:20px;padding-left:120px;">	&copy; 2020 Copyright: SFU Anime Club. All rights reserved</h4>
 </div>
 
+<style>
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.header-container {
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 1s ease-out 0s 1 slideInFromLeft;
 
 
+  padding: 30px;
+}
+
+
+</style>
+
+</script>
 </div>
 </footer>

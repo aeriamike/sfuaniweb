@@ -22,6 +22,12 @@ class administration(models.Model):
     body = RichTextUploadingField(blank=True, null=True)
     datetime = models.DateField()
 
+class gallery(models.Model):
+    title = models.CharField(max_length=255, help_text="Title of blog posting")
+    hotel_Main_Img = models.ImageField(upload_to='img/index-gallery/')
+    datetime = models.DateField()
+
+
 class about(models.Model):
     title = models.CharField(max_length=255, help_text="Title of blog posting")
 
